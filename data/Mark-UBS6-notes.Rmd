@@ -1,0 +1,32 @@
+---
+title: "Mark UBS6 notes"
+author: "Tim Finney"
+date: "25 Apr 2026"
+output: html_document
+---
+
+## Notes on encoding the apparatus
+
+1. Sigla are converted to elements separated by dashes. E.g. sy<sup>h</sup> becomes `sy-h`.
+
+2. At each variation site the first reading is encoded as `1`, the second as `2`, and so on. (Notes below refer to this encoding as the *relevant code*.) The code `NA` (for *not available*) is used where the reading of a witness is indefinite through being absent from the attribution list or otherwise subject to significant uncertainty.
+
+3. The following encoding rules are followed where the reading of a witness at a variation site is subject to some form of uncertainty (*X* stands for a siglum):
+
+a. X-vid or (X) (*vid* stands for *apparent reading* and parentheses stand for *negligible difference*): X is treated as a definite witness for the reading and is given the relevant code (e.g. `1` if in the attribution list for the first reading)
+
+b. X vs X-ms (i.e. group vs a single member): X is given the relevant code
+
+c. X-mss vs nothing (i.e. multiple members of a group vs no others): X is given the relevant code
+
+d. X-mss vs X-ms (i.e. multiple members vs a single member): X is given the relevant code
+
+e. X? vs X?: X is treated as indefinite and encoded as `NA` (for *not available*)
+
+f. X vs X-mss: X is encoded as `NA`
+
+g. X-pt vs nothing: X is encoded as `NA`
+
+h. X-ms vs X-ms: X is encoded as `NA`
+
+i. X-pt vs X-pt: X is encoded as `NA`
