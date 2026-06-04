@@ -30,3 +30,5 @@ g. X-pt vs nothing: X is encoded as `NA`
 h. X-ms vs X-ms: X is encoded as `NA`
 
 i. X-pt vs X-pt: X is encoded as `NA`
+
+j. X-acc. to Y: X is encoded as `NA` (including when X = *mss*)
