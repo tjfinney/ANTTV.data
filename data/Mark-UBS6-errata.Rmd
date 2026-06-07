@@ -1,0 +1,10 @@
+---
+title: "Mark UBS6 errata"
+author: "Tim Finney"
+date: "7 Jun 2026"
+output: html_document
+---
+
+## Possible errors in the UBS6 apparatus
+
+* Mark 7.4: 037-c for reading 2 but no 037-* for reading 1 
